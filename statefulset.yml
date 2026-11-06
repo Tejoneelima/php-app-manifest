@@ -24,7 +24,7 @@ spec:
         #secret Integration
           envFrom:
             - secretRef:
-              name: bankapp-db-secret
+                name: bankapp-db-secret
 
         #Resource Quota
           resources:
