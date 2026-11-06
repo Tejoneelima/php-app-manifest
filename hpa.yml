@@ -2,7 +2,7 @@
 apiVersion: autoscaling/v2
 kind: HorizontalPodAutoScaler
 metadata:
-  name: banapp-hpa
+  name: bankapp-hpa
 spec:
   scaleTargetRef:
     apiVersion: apps/v1
