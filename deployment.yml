@@ -22,7 +22,7 @@ spec:
         #configmap Integration
           envFrom:
             - configMapRef:
-              name: bankapp-config
+                name: bankapp-config
 
         #Resource Quota
           resources:
@@ -33,14 +33,14 @@ spec:
               cpu: "200m"
               memory: "256Mi"
 
-          liveness Probe:
+          livenessProbe:
             httpGet:
               path: /
               port: 80
             initialDelaySeconds: 30
             periodSeconds: 5
 
-          readiness Probe:
+          readinessProbe:
             httpGet:
               path: /
               port: 80
