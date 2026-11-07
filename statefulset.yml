@@ -39,14 +39,14 @@ spec:
             - name: mysql-data
               mountPath: /usr/share/nginx/html/
 
-      volumeClaimTemplates:
-        - metadata:
-            name: mysql-data
-          spec:
-            accessModes:
-              - ReadwriteOnce
-            storageClassName: gp2
-            resources:
-              requests:
-                storage: 2Gi
+    volumeClaimTemplates:
+      - metadata:
+          name: mysql-data
+         spec:
+           accessModes:
+            - ReadwriteOnce
+          storageClassName: gp2
+          resources:
+            requests:
+              storage: 2Gi
         
