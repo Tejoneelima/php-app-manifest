@@ -42,7 +42,7 @@ spec:
     volumeClaimTemplates:
       - metadata:
           name: mysql-data
-         spec:
+        spec:
            accessModes:
             - ReadwriteOnce
           storageClassName: gp2
