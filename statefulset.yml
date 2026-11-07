@@ -35,9 +35,9 @@ spec:
               cpu: "200m"
               memory: "256Mi"
   
-          volumeMounts:
-            - name: mysql-data
-              mountPath: /usr/share/nginx/html/
+volumeMounts:
+  - name: mysql-data
+    mountPath: /usr/share/nginx/html/
 
 volumeClaimTemplates:
   - metadata:
