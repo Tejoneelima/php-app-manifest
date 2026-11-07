@@ -9,5 +9,5 @@ spec:
     requests.memory: "2Gi"
     limits.cpu: "4"
     limits.memory: "4Gi"
-    pods: "10"
+    pods: "15"
     services: "5"
