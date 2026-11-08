@@ -35,5 +35,5 @@ spec:
             matchLabels:
               kubernetes.io/metadata.name: kube-system
             ports:
-              - ports: 53
+              - port: 53
                 protocol: UDP
